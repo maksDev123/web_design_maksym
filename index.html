@@ -5,211 +5,264 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <section>
-            <img src="images/color_blur_header.png" />
-            <img src="images/logo.svg" alt="logo of Hounter" />
-            <span>Hounter</span>
-            <h1>Find The Place To Live Your Dreams Easily Here</h1>
-            <p>Everything you need about finding your place to live will be here, where it will be easier for you</p>
-            <div>
-                <img src="images/fluent_location_icon.svg" /><input type="text"><button>Search <img
-                        src="images/Arow_button_header.png" /></button>
+    <header class="section">
+        <div class="spacer"></div>
+        <section class="header_main">
+            <div class="logo_center">
+                <img src="images/logo.svg" alt="logo of Hounter" />
+                <span>Hounter</span>
             </div>
-            <h5> Our partnership</h5>
-            <div>
-                <img src="images/traveloka_logo.svg" alt="Traveloka logo" />
-                <img src="images/ticket_com_logo.svg" alt="Ticket com logo" />
-                <img src="images/airbnb_logo.svg" alt="Airbnb logo" />
-                <img src="images/trip_advisor_logo.svg" alt="Trip advisor logo" />
+            <div class="header_info">
+                <h1 class="header_heading">Find The Place To Live <span> Your Dreams
+                    </span> Easily Here</h1>
+                <p class="heading_paragraph">Everything you need about finding your place to live will be here, where it
+                    will be easier for you
+                </p>
+                <div class="search-container">
+                    <img class="location_icon_header" src="images/fluent_location_icon.svg" />
+                    <input type="text" placeholder="Search for the location you want!">
+                    <button type="button">Search <img src="images/arrow_button_header.svg" /></button>
+                </div>
+                <h5 class="partners_label"> Our partnership</h5>
+                <div class="partners_block">
+                    <img src="images/traveloka_logo.svg" alt="Traveloka logo" />
+                    <div class="partners_spacer"></div>
+                    <img src="images/ticket_com_logo.svg" alt="Ticket com logo" />
+                    <div class="partners_spacer"></div>
+                    <img src="images/airbnb_logo.svg" alt="Airbnb logo" />
+                    <div class="partners_spacer"></div>
+                    <img src="images/trip_advisor_logo.svg" alt="Trip advisor logo" />
 
+                </div>
             </div>
         </section>
-        <aside>
+        <div class="spacer"></div>
+        <aside class="image_header_aside">
+            <img class="img_aside_header" src="images/image_main_header.png" />
             <nav>
-                <ul>
-                    <li><a href="#home">About us</a></li>
-                    <li><a href="#about">Article</a></li>
-                    <li><a href="#services">Property</a></li>
-                    <li><a href="#contact">Sign up</a></li>
+                <ul class="navbar_header">
+                    <div class="spacer"></div>
+                    <li><a class="custom-button" href="#home">About us</a></li>
+                    <div class="spacer_nav"></div>
+                    <li><a class="custom-button" href="#about">Article</a></li>
+                    <div class="spacer_nav"></div>
+                    <li><a class="custom-button" href="#services">Property</a></li>
+                    <div class="spacer_nav"></div>
+                    <li><a class="button_sign_up" href="#contact">Sign up</a></li>
+                    <div class="spacer"></div>
                 </ul>
             </nav>
-            <div>
-                <img src="images/image_main_header.png" alt="Image with beautifull house" />
-                <div>
-                    <article>
-                        <div>
-                            <img src="images/logo_block_1.svg" />
-                        </div>
-                        <div>
-                            <h4>1K+ People</h4>
-                            <p>Successfully Getting Home</p>
-                        </div>
-                    </article>
-                    <article>
-                        <div>
-                            <img src="images/logo_block_2.svg" />
-                        </div>
-                        <div>
-                            <h4>56 Houses</h4>
-                            <p>Sold Monthly</p>
-                        </div>
-                    </article>
-                    <article>
-                        <div>
-                            <img src="images/logo_block_3.svg" />
-                        </div>
-                        <div>
-                            <h4>4K+</h4>
-                            <p>People Looking for New Homes</p>
-                        </div>
-                    </article>
-                </div>
+            <div class="people_boxes_aside">
+                <article>
+                    <div>
+                        <img class="logo_block_multiple" src="images/logo_block_1.svg" />
+                    </div>
+                    <div>
+                        <h4 class="block_text_aside_heading">1K+ People</h4>
+                        <p class="block_text_aside_description">Successfully Getting Home</p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <img class="logo_block_single_s" src="images/logo_block_2.svg" />
+                    </div>
+                    <div>
+                        <h4>56 Houses</h4>
+                        <p>Sold Monthly</p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <img class="logo_block_single" src="images/logo_block_3.svg" />
+                    </div>
+                    <div>
+                        <h4>4K+</h4>
+                        <p>People Looking for New Homes</p>
+                    </div>
+                </article>
+                <!-- </div> -->
             </div>
         </aside>
     </header>
-    <main>
-        <section>
-            <img src="images/dash_section_divider.svg" />Our Recommendation
-            <nav>
-                <div>
-                    <h2>Featured House</h2>
+    <main class="main_section">
+
+        <section class="one_section">
+            <div class="spacer"></div>
+            <div class="content_section">
+                <div class="page_separator_block">
+                    <img src="images/dash_section_divider.svg" /><span class="page_separator_txt">Our Recommendation
+                    </span>
                 </div>
-                <div>
-                    <nav>
-                        <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#about">Villa</a></li>
-                            <li><a href="#services">Apartment</a></li>
+                <div class="main_body_section">
+                    <nav class="navbar_house_feature">
+                        <h2 class="heading_section">Featured House</h2>
+                        <ul class="navbar_feature">
+                            <li><a class="feature_button" href="#home">Home</a></li>
+                            <li><a class="feature_button" href="#about">Villa</a></li>
+                            <li><a class="feature_button" href="#services">Apartment</a></li>
                         </ul>
+
+                        <div class="buttons_align_switch">
+                            <button class="switch_button_grey"><img
+                                    src="images/eva_arrow-ios-forward-fill.png" /></button>
+                            <button class="switch_button_green"><img
+                                    src="images/eva_arrow-ios-forward-fill_white.png" /></button>
+
+                        </div>
                     </nav>
-                </div>
-                <div>
-                    <button><img src="images/eva_arrow-ios-forward-fill.png" /></button>
-                    <button><img src="images/eva_arrow-ios-forward-fill_white.png" /></button>
-                </div>
-            </nav>
-            <article>
-                <div>
-                    <div>
-                        <div>
-                            <img src="images/white_house_palms.png" alt="White house with palms" />
-                            <div>
-                                <img src="images/popular_label.svg"/>
+
+                    <article class="data_cards_houses">
+
+                        <div class="card_house">
+                            <div class="image_block">
+                                <img src="images/white_house_palms.png" alt="White house with palms" />
+                                <div class="house_lable">
+                                    <img src="images/popular_label.svg" />
+                                </div>
+                            </div>
+                            <h3>Roselands House</h3>
+                            <p>$ 35.000.000</p>
+                            <div class="house_card_user">
+                                <img src="images/logo_person_1.svg" />
+                                <div class="house_card_user_info">
+                                    <h4>Dianne Russell</h4>
+                                    <p>Manchester, Kentucky</p>
+                                </div>
                             </div>
                         </div>
-                        <h3>Roselands House</h3>
-                        <p>$ 35.000.000</p>
-                        <div>
-                            <img src="images/logo_person_1.svg" />
-                            <h4>Dianne Russell</h4>
-                            <p>Manchester, Kentucky</p>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="images/white_house_black_roof.png" alt="White house with black roof" />
-                        <h3>Woodlandside</h3>
-                        <p>$ 20.000.000</p>
-                        <div>
-                            <img src="images/logo_person_2.svg" />
-                            <h4>Robert Fox</h4>
-                            <p>Dr. San Jose, South Dakota</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <img src="images/white_appartments.png" alt="White appartments" />
-                            <div>
-                                <img src="images/Best_deals_label.svg"/>
+                        <div class="card_house">
+                            <div class="image_block"><img src="images/white_house_black_roof.png"
+                                    alt="White house with black roof" />
+                            </div>
+                            <h3>Woodlandside</h3>
+                            <p>$ 20.000.000</p>
+                            <div class="house_card_user">
+                                <img src="images/logo_person_2.svg" />
+                                <div>
+                                    <h4>Robert Fox</h4>
+                                    <p>Dr. San Jose, South Dakota</p>
+                                </div>
                             </div>
                         </div>
-                        
-                        <h3>The Old Lighthouse</h4>
+                        <div class="card_house">
+                            <div class="image_block">
+                                <img src="images/white_appartments.png" alt="White appartments" />
+                                <div class="house_lable">
+                                    <img src="images/Best_deals_label.svg" />
+                                </div>
+                            </div>
+
+                            <h3>The Old Lighthouse</h3>
                             <p>$ 44.000.000</p>
-                            <div>
+                            <div class="house_card_user">
                                 <img src="images/logo_person_3.svg" />
-                                <h4>Ronald Richards</h4>
-                                <p>Santa Ana, Illinois</p>
-                            </div>
-                    </div>
-                    <div>
-                        <div>
-                            <img src="images/white_old_house.png" alt="White old house"/>
-                            <div>
-                                <img src="images/popular_label.svg"/>
+                                <div>
+                                    <h4>Ronald Richards</h4>
+                                    <p>Santa Ana, Illinois</p>
+                                </div>
                             </div>
                         </div>
-                       
-                        <h3>Cosmo's House</h3>
-                        <p>$ 22.000.000</p>
-                        <div>
-                            <img src="images/logo_person_4.svg" />
-                            <h4>Jenny Wilson</h4>
-                            <p>Preston Rd. Inglewood, Maine 98380</p>
-                        </div>
-                    </div>
+                        <!-- <div class="card_house_small">
+                            <div class="image_block">
+                                <img src="images/white_old_house.png" alt="White old house" />
+                                <div class="house_lable">
+                                    <img src="images/popular_label.svg" />
+                                </div>
+                            </div>
+
+                            <h3>Cosmo's House</h3>
+                            <p>$ 22.000.000</p>
+                            <div class="house_card_user">
+                                <img src="images/logo_person_4.svg" />
+                                <div>
+                                    <h4>Jenny Wilson</h4>
+                                    <p>Preston Rd. Inglewood, Maine 98380</p>
+                                </div>
+                            </div>
+                        </div> -->
+
 
                 </div>
-            </article>
+                </article>
+            </div>
+
         </section>
 
 
-        <section>
-            <img src="images/blur_section_3_1.svg" />
-            <img src="images/blur_section_3_2.svg" />
+        <section class="one_section">
+            <img class="blur_video_1" src="images/blur_section_3_1.svg" />
+            <img class="blur_video_2" src="images/blur_section_3_2.svg" />
+            <div class="spacer"></div>
+            <div class="content_section_sell">
+                <article>
 
-            <article>
-                <img src="images/dash_section_divider.svg" />Ready to Sell!
-                <h2>Let’s tour and see our house!</h2>
-                <p>Houses recommended by our partners that have been curated to become the home of your dreams!</p>
-                <h4>House Detail</h4>
-                <div>
-                    <div>
-                        <img src="images/bed.svg" />
-                        <p>4 Bedrooms</p>
+                    <div class="page_separator_block">
+                        <img src="images/dash_section_divider.svg" /><span class="page_separator_txt">Ready to Sell!
+                        </span>
                     </div>
-                    <div>
-                        <img src="images/car.svg" />
-                        <p>1 Carport</p>
+                    <div class="sell_section_main_info">
+                        <h2 class="heading_section">Let’s tour and see our house!</h2>
+                        <p class="heading_paragraph">Houses recommended by our partners that have been curated to become
+                            the home of your dreams!
+                        </p>
+                        <h4 class=details_heading>House Detail</h4>
+                        <div class="details_block">
+                            <div class="feature_block">
+                                <img src="images/bed.svg" />
+                                <p>4 Bedrooms</p>
+                            </div>
+                            <div class="feature_block">
+                                <img src="images/car.svg" />
+                                <p>1 Carport</p>
+                            </div>
+                            <div class="feature_block">
+                                <img src="images/bath.svg" />
+                                <p>2 Bathrooms</p>
+                            </div>
+                            <div class="feature_block">
+                                <img src="images/floors.svg" />
+                                <p>2 Floors</p>
+                            </div>
+                        </div>
+
+
                     </div>
-                    <div>
-                        <img src="images/bath.svg" />
-                        <p>2 Bathrooms</p>
-                    </div>
-                    <div>
-                        <img src="images/floors.svg" />
-                        <p>2 Floors</p>
-                    </div>
-                </div>
-                <hr>
-                <div>
-                    <div>
-                        <img src="images/logo_big.svg" />
-                        <h4>Dianne Russell</h4>
-                        <p>Manager Director</p>
-                    </div>
-                    <div>
+                    <div class="horizontal_split_line"></div>
+                    <div class="align_contacts_video">
+
+
+                        <img class="logo_video" src="images/logo_person_1.svg" />
+                        <div class=house_card_user_info>
+                            <h4>Dianne Russell</h4>
+                            <p>Manager Director</p>
+                        </div>
+
                         <button><img src="images/phone_logo.svg" />Contact Now</button>
                     </div>
-                </div>
-            </article>
-            <aside>
-                <video width="320" height="240" controls>
-                    <source src="videos/video_house.mp4" type="video/mp4" alt="Video with many houses">
-                </video>
-
-                <img src="images/images_video_1.png" />
-                <img src="images/images_video_2.png" />
-                <img src="images/images_video_3.png" />
-
-            </aside>
+                </article>
+                <div class="spacer"></div>
+                <aside class="aside_video">
+                    <video class="video_box" width="320" height="240" controls>
+                        <source src="videos/video_house.mp4" type="video/mp4" alt="Video with many houses">
+                    </video>
+                    <div class = "images_video_overlap">
+                        <img src="images/images_video_1.png" />
+                        <img src="images/images_video_2.png" />
+                        <img src="images/images_video_3.png" />
+                    </div>
+                </aside>
+                <div class = "spacer"></div>
+            </div>
         </section>
         <section>
-            <div>
+            <div class="center_section_separator">
                 <img src="images/dash_section_divider.svg" />See Our Review
             </div>
             <div>
