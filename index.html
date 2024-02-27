@@ -228,11 +228,11 @@
                             </div>
                             <div class="feature_block">
                                 <img src="images/bath.svg" />
-                                <p>2 Bathrooms</p>
+                                <p class = "custom_feature">2 Bathrooms</p>
                             </div>
                             <div class="feature_block">
                                 <img src="images/floors.svg" />
-                                <p>2 Floors</p>
+                                <p class = "custom_feature">2 Floors</p>
                             </div>
                         </div>
 
@@ -253,7 +253,7 @@
                 </article>
                 <div class="spacer"></div>
                 <aside class="aside_video">
-                    <video id = "video_house" muted="muted" class="video_box" width="320" height="240">
+                    <video id = "video_house" muted="muted" class="video_box" width="320" height="240" autoplay loop>
                         <source src="videos/video_house.mp4" type="video/mp4" alt="Video with many houses">
                     </video>
                     <div class="images_video_overlap">
@@ -488,31 +488,6 @@
             </div>
         </footer>
     </main>
-
-
-
-    <script>
-        function isInViewport(element) {
-          const rect = element.getBoundingClientRect();
-          return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-          );
-        }
-      
-        function playVideoOnScroll() {
-          const video = document.getElementById('video_house');
-          if (isInViewport(video)) {
-            video.play();
-            window.removeEventListener('scroll', playVideoOnScroll);
-          }
-        }
-      
-        window.addEventListener('scroll', playVideoOnScroll);
-      </script>
-
 
 </body>
 
