@@ -124,7 +124,8 @@
 
                         <div class="card_house">
                             <div class="image_block">
-                                <img src="images/white_house_palms.png" alt="White house with palms" />
+                                <img class="image_cards" src="images/white_house_palms.png"
+                                    alt="White house with palms" />
                                 <div class="house_lable">
                                     <img src="images/popular_label.svg" />
                                 </div>
@@ -140,7 +141,8 @@
                             </div>
                         </div>
                         <div class="card_house">
-                            <div class="image_block"><img src="images/white_house_black_roof.png"
+                            <div class="image_block">
+                                <img class="image_cards" src="images/white_house_black_roof.png"
                                     alt="White house with black roof" />
                             </div>
                             <h3>Woodlandside</h3>
@@ -155,7 +157,7 @@
                         </div>
                         <div class="card_house">
                             <div class="image_block">
-                                <img src="images/white_appartments.png" alt="White appartments" />
+                                <img class="image_cards" src="images/white_appartments.png" alt="White appartments" />
                                 <div class="house_lable">
                                     <img src="images/Best_deals_label.svg" />
                                 </div>
@@ -171,9 +173,9 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="card_house_small">
+                        <!-- <div class="card_house">
                             <div class="image_block">
-                                <img src="images/white_old_house.png" alt="White old house" />
+                                <img class = "image_cards" src="images/white_old_house.png" alt="White old house" />
                                 <div class="house_lable">
                                     <img src="images/popular_label.svg" />
                                 </div>
@@ -251,7 +253,7 @@
                 </article>
                 <div class="spacer"></div>
                 <aside class="aside_video">
-                    <video class="video_box" width="320" height="240" controls>
+                    <video id = "video_house" muted="muted" class="video_box" width="320" height="240">
                         <source src="videos/video_house.mp4" type="video/mp4" alt="Video with many houses">
                     </video>
                     <div class="images_video_overlap">
@@ -486,6 +488,31 @@
             </div>
         </footer>
     </main>
+
+
+
+    <script>
+        function isInViewport(element) {
+          const rect = element.getBoundingClientRect();
+          return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+          );
+        }
+      
+        function playVideoOnScroll() {
+          const video = document.getElementById('video_house');
+          if (isInViewport(video)) {
+            video.play();
+            window.removeEventListener('scroll', playVideoOnScroll);
+          }
+        }
+      
+        window.addEventListener('scroll', playVideoOnScroll);
+      </script>
+
 
 </body>
 
